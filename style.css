@@ -1,18 +1,47 @@
+body
+{
+  display: flex;
+  background-color: pink;
+  flex-direction: column;
+  font-family: Verdana;
+  align-items: center;
+  text-align: center;
+}
+
+span
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1
+{
+  margin-top: 50px;
+  border: solid 2px white;
+  padding: 15px 15px 15px 15px;
+  width: auto;
+  color: white;
+  font-size: 20pt;
+
+}
+
 .grid-container
 {
     display: grid;
-  padding: 5px;
-  width: auto;
-  height: 100vw;
+    padding: 1px;
+    width: 500px;
+    height: 500px;
+
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-gap: 5px;
-    background-color: #2196F3; 
+    background-color: pink; 
 
 } 
 
 .grid-container > div 
 {
-   background-color: pink;
-
+   background-color: white;
 } 
+
+
