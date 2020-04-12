@@ -2,11 +2,11 @@ let color = "rgb(132, 105, 255)";
 let pointerDown = false;
 
 const grid = document.querySelector(".grid-container");
-
+const colorPicker = document.querySelector("#color");
 
 document.addEventListener("mousedown", (e) => { pointerDown = true; });
-
 document.addEventListener("mouseup", (e) => { pointerDown = false; });
+colorPicker.addEventListener("change", (e) => {color = e.target.value});
 
 function changeColor(e)
 {
